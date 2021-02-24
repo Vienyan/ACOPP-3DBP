@@ -56,8 +56,8 @@ def main(argv):
                     needFirst.append(platformOrder.index(int(re.findall("\d+",item['platformCode'])[0])))
 
             updataPath = 0
-            #每隔10代重新求一次路径,返回的是platformOrder的索引节点
-            if gen<10:
+            #每隔5代重新求一次路径,返回的是platformOrder的索引节点
+            if gen<50 and gen%5 == 0:
                 bestPath = antLoad(numOfNode+2,distanceMat,antNum,gen+1,needFirst)
                 updataPath = 1
             elif gen%20 == 0:
