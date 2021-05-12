@@ -1,6 +1,6 @@
 # ACOPP-3DBP
 CodaLab Competition Code --vienyan
-
+华为EMO 三维装修以及路径规划
 
 #执行方法：
 1、输入数据：data/inputs
